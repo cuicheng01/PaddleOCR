@@ -12,21 +12,21 @@
         <meta name="author" content="PaddleOCR PMC">
       
       
-        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/en/version3.x/deployment/python_and_cpp_infer.html">
+        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/en/version3.x/module_usage/chart_parsing.html">
       
       
-        <link rel="prev" href="serving.html">
+        <link rel="prev" href="text_recognition.html">
       
       
-        <link rel="next" href="mcp_server.html">
+        <link rel="next" href="../pipeline_usage/pipeline_overview.html">
       
       
       <link rel="icon" href="../../../version2.x/static/images/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>Python and CPP Inference - PaddleOCR Documentation</title>
+        <title>Chart Parsing Module - PaddleOCR Documentation</title>
       
     
     
@@ -146,7 +146,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inference-with-python-or-c-prediction-engine" class="md-skip">
+        <a href="#chart-parsing-module-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -197,7 +197,7 @@ You're not viewing the latest version.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python and CPP Inference
+              Chart Parsing Module
             
           </span>
         </div>
@@ -244,13 +244,13 @@ You're not viewing the latest version.
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../../version3.x/deployment/python_and_cpp_infer.html" hreflang="zh" class="md-select__link">
+            <a href="../../../version3.x/module_usage/chart_parsing.html" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="python_and_cpp_infer.html" hreflang="en" class="md-select__link">
+            <a href="chart_parsing.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -437,13 +437,11 @@ You're not viewing the latest version.
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="high_performance_inference.html" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../deployment/high_performance_inference.html" class="md-tabs__link">
           
   
   
@@ -461,11 +459,13 @@ You're not viewing the latest version.
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../module_usage/module_overview.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="module_overview.html" class="md-tabs__link">
           
   
   
@@ -780,6 +780,10 @@ You're not viewing the latest version.
       
         
       
+        
+      
+        
+      
     
     
     
@@ -875,6 +879,52 @@ You're not viewing the latest version.
   
   <span class="md-ellipsis">
     PP-OCRv5 Multilingual Text Recognition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version3.x/deployment/cpp/OCR.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ Local Deployment for General OCR Pipeline - Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version3.x/deployment/cpp/OCR_windows.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ Local Deployment for General OCR Pipeline - Windows
     
   </span>
   
@@ -1100,10 +1150,8 @@ You're not viewing the latest version.
       
   
   
-    
   
   
-  
     
     
       
@@ -1127,20 +1175,19 @@ You're not viewing the latest version.
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1153,7 +1200,7 @@ You're not viewing the latest version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Model Deploy
@@ -1167,7 +1214,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="high_performance_inference.html" class="md-nav__link">
+      <a href="../deployment/high_performance_inference.html" class="md-nav__link">
         
   
   
@@ -1190,7 +1237,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="obtaining_onnx_models.html" class="md-nav__link">
+      <a href="../deployment/obtaining_onnx_models.html" class="md-nav__link">
         
   
   
@@ -1213,7 +1260,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="on_device_deployment.html" class="md-nav__link">
+      <a href="../deployment/on_device_deployment.html" class="md-nav__link">
         
   
   
@@ -1236,7 +1283,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="serving.html" class="md-nav__link">
+      <a href="../deployment/serving.html" class="md-nav__link">
         
   
   
@@ -1256,30 +1303,20 @@ You're not viewing the latest version.
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="python_and_cpp_infer.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../deployment/cpp/cpp_local_deployment.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Python and CPP Inference
+    C++ Local Deployment
     
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -1292,7 +1329,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="mcp_server.html" class="md-nav__link">
+      <a href="../deployment/mcp_server.html" class="md-nav__link">
         
   
   
@@ -1315,7 +1352,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="packaging.html" class="md-nav__link">
+      <a href="../deployment/packaging.html" class="md-nav__link">
         
   
   
@@ -1365,8 +1402,10 @@ You're not viewing the latest version.
       
   
   
+    
   
   
+  
     
     
       
@@ -1396,23 +1435,26 @@ You're not viewing the latest version.
       
         
       
-    
-    
-    
-      
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1425,7 +1467,7 @@ You're not viewing the latest version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Module List
@@ -1439,7 +1481,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/module_overview.html" class="md-nav__link">
+      <a href="module_overview.html" class="md-nav__link">
         
   
   
@@ -1462,7 +1504,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/doc_img_orientation_classification.html" class="md-nav__link">
+      <a href="doc_img_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -1485,7 +1527,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/doc_vlm.html" class="md-nav__link">
+      <a href="doc_vlm.html" class="md-nav__link">
         
   
   
@@ -1508,7 +1550,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/formula_recognition.html" class="md-nav__link">
+      <a href="formula_recognition.html" class="md-nav__link">
         
   
   
@@ -1531,7 +1573,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/layout_detection.html" class="md-nav__link">
+      <a href="layout_detection.html" class="md-nav__link">
         
   
   
@@ -1554,7 +1596,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/seal_text_detection.html" class="md-nav__link">
+      <a href="seal_text_detection.html" class="md-nav__link">
         
   
   
@@ -1577,7 +1619,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_cells_detection.html" class="md-nav__link">
+      <a href="table_cells_detection.html" class="md-nav__link">
         
   
   
@@ -1600,7 +1642,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_classification.html" class="md-nav__link">
+      <a href="table_classification.html" class="md-nav__link">
         
   
   
@@ -1623,7 +1665,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_structure_recognition.html" class="md-nav__link">
+      <a href="table_structure_recognition.html" class="md-nav__link">
         
   
   
@@ -1646,7 +1688,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_detection.html" class="md-nav__link">
+      <a href="text_detection.html" class="md-nav__link">
         
   
   
@@ -1669,7 +1711,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_image_unwarping.html" class="md-nav__link">
+      <a href="text_image_unwarping.html" class="md-nav__link">
         
   
   
@@ -1692,7 +1734,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/textline_orientation_classification.html" class="md-nav__link">
+      <a href="textline_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -1715,7 +1757,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_recognition.html" class="md-nav__link">
+      <a href="text_recognition.html" class="md-nav__link">
         
   
   
@@ -1726,6 +1768,116 @@ You're not viewing the latest version.
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Chart Parsing Module
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="chart_parsing.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chart Parsing Module
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-supported-model-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Supported Model List
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Quick Start
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-custom-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Custom Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. FAQ
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3079,6 +3231,59 @@ You're not viewing the latest version.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-supported-model-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Supported Model List
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Quick Start
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-custom-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Custom Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. FAQ
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3093,7 +3298,7 @@ You're not viewing the latest version.
 
 
   
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/deployment/python_and_cpp_infer.en.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/module_usage/chart_parsing.en.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -3102,22 +3307,221 @@ You're not viewing the latest version.
     
       
     
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/deployment/python_and_cpp_infer.en.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/module_usage/chart_parsing.en.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="inference-with-python-or-c-prediction-engine">Inference with Python or C++ Prediction Engine<a class="headerlink" href="#inference-with-python-or-c-prediction-engine" title="Permanent link">&para;</a></h1>
-<p>Since the 2.x branch, inference with Python or C++ prediction engines has been a significant feature. This functionality allows users to load OCR-related models and perform inference without installing the wheel package.</p>
-<p>Due to differences in pre-processing, post-processing, and concatenation details compared to the wheel package, the inference results may slightly vary, and the two cannot be directly interchanged.</p>
-<p>For specific usage instructions, please refer to the following documents:</p>
+<h1 id="chart-parsing-module-tutorial">Chart Parsing Module Tutorial<a class="headerlink" href="#chart-parsing-module-tutorial" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>Multimodal chart parsing is a cutting-edge OCR technology that focuses on automatically converting various types of visual charts (such as bar charts, line charts, pie charts, etc.) into structured data tables with formatted output. Traditional methods rely on complex pipeline designs with chart keypoint detection models, which involve many prior assumptions and tend to lack robustness. The models in this module leverage the latest VLM (Vision-Language Model) techniques and are data-driven, learning robust features from vast real-world datasets. Application scenarios include financial analysis, academic research, business reporting, and more—for instance, quickly extracting growth trend data from financial reports, experimental comparison figures from research papers, or user distribution statistics from market surveys—empowering users to transition from “viewing charts” to “using data”.</p>
+<h2 id="2-supported-model-list">2. Supported Model List<a class="headerlink" href="#2-supported-model-list" title="Permanent link">&para;</a></h2>
+<table>
+<tr>
+<th>Model</th><th>Download Link</th>
+<th>Model Size (B)</th>
+<th>Storage Size (GB)</th>
+<th>Score</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>PP-Chart2Table</td>
+<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-Chart2Table_infer.tar">Inference Model</a></td>
+<td>0.58</td>
+<td>1.4</td>
+<th>80.60</th>
+<td>PP-Chart2Table is a multimodal chart parsing model developed by the PaddlePaddle team. It demonstrates exceptional performance on both Chinese and English chart parsing tasks. The team designed a specialized “Shuffled Chart Data Retrieval” training task and adopted a carefully designed token masking strategy, significantly improving performance on chart-to-table conversion. Additionally, the team enhanced the model with a high-quality data synthesis process using seed data, RAG, and LLM persona-driven generation to diversify training data. To handle large amounts of out-of-distribution (OOD) unlabeled data, a two-stage large model distillation process was used to ensure excellent adaptability and generalization to diverse real-world data. In internal Chinese-English use case evaluations, PP-Chart2Table achieved state-of-the-art performance among models of similar size and reached accuracy comparable to 7B-parameter VLMs in key scenarios.</td>
+</tr>
+</table>
+
+<p><strong>Note:</strong> The scores above are based on internal evaluation on a test set of 1801 samples, covering various chart types (bar, line, pie, etc.) across scenarios such as financial reports, regulations, and contracts. There is currently no plan for public release.</p>
+<blockquote>
+<p>❗ <strong>Note:</strong> The PP-Chart2Table model was upgraded on June 27, 2025. To use the previous version, please download it <a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-Chart2Table_infer.bak.tar">here</a></p>
+</blockquote>
+<h2 id="3-quick-start">3. Quick Start<a class="headerlink" href="#3-quick-start" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>❗ Before getting started, please install the PaddleOCR wheel package. Refer to the <a href="../installation.html">Installation Guide</a> for details.</p>
+</blockquote>
+<p>Run the following command to get started instantly:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>paddleocr<span class="w"> </span>chart_parsing<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;{&#39;image&#39;: &#39;https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/chart_parsing_02.png&#39;}&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="sb">````</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>**Note:**<span class="w"> </span>By<span class="w"> </span>default,<span class="w"> </span>PaddleOCR<span class="w"> </span>retrieves<span class="w"> </span>models<span class="w"> </span>from<span class="w"> </span>HuggingFace.<span class="w"> </span>If<span class="w"> </span>HuggingFace<span class="w"> </span>access<span class="w"> </span>is<span class="w"> </span>restricted<span class="w"> </span><span class="k">in</span><span class="w"> </span>your<span class="w"> </span>environment,<span class="w"> </span>you<span class="w"> </span>can<span class="w"> </span>switch<span class="w"> </span>the<span class="w"> </span>model<span class="w"> </span><span class="nb">source</span><span class="w"> </span>to<span class="w"> </span>BOS<span class="w"> </span>by<span class="w"> </span>setting<span class="w"> </span>the<span class="w"> </span>environment<span class="w"> </span>variable:<span class="w"> </span><span class="sb">`</span><span class="nv">PADDLE_PDX_MODEL_SOURCE</span><span class="o">=</span><span class="s2">&quot;BOS&quot;</span><span class="sb">`</span>.<span class="w"> </span>Support<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>mainstream<span class="w"> </span>sources<span class="w"> </span>is<span class="w"> </span>planned.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>You<span class="w"> </span>can<span class="w"> </span>also<span class="w"> </span>integrate<span class="w"> </span>the<span class="w"> </span>inference<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>vision-language<span class="w"> </span>model<span class="w"> </span>into<span class="w"> </span>your<span class="w"> </span>own<span class="w"> </span>project.<span class="w"> </span>Please<span class="w"> </span>download<span class="w"> </span>the<span class="w"> </span><span class="o">[</span>example<span class="w"> </span>image<span class="o">](</span>https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/chart_parsing_02.png<span class="o">)</span><span class="w"> </span>locally<span class="w"> </span>before<span class="w"> </span>running<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>code:
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="sb">```</span>python
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>from<span class="w"> </span>paddleocr<span class="w"> </span>import<span class="w"> </span>ChartParsing
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nv">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>ChartParsing<span class="o">(</span><span class="nv">model_name</span><span class="o">=</span><span class="s2">&quot;PP-Chart2Table&quot;</span><span class="o">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nv">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>model.predict<span class="o">(</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nv">input</span><span class="o">={</span><span class="s2">&quot;image&quot;</span>:<span class="w"> </span><span class="s2">&quot;chart_parsing_02.png&quot;</span><span class="o">}</span>,
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">1</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="o">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">for</span><span class="w"> </span>res<span class="w"> </span><span class="k">in</span><span class="w"> </span>results:
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span>res.print<span class="o">()</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span>res.save_to_json<span class="o">(</span>f<span class="s2">&quot;./output/res.json&quot;</span><span class="o">)</span>
+</span></code></pre></div>
+<p>The output result will be:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">{</span><span class="s1">&#39;res&#39;</span>:<span class="w"> </span><span class="o">{</span><span class="s1">&#39;image&#39;</span>:<span class="w"> </span><span class="s1">&#39;chart_parsing_02.png&#39;</span>,<span class="w"> </span><span class="s1">&#39;result&#39;</span>:<span class="w"> </span><span class="s1">&#39;Year | Avg Revenue per 5-star Hotel (Million CNY) | Avg Profit per 5-star Hotel (Million CNY)\n2018 | 104.22 | 9.87\n2019 | 99.11 | 7.47\n2020 | 57.87 | -3.87\n2021 | 68.99 | -2.9\n2022 | 56.29 | -9.48\n2023 | 87.99 | 5.96&#39;</span><span class="o">}}</span>
+</span></code></pre></div>
+<p>Explanation of output parameters:</p>
 <ul>
-<li><a href="../../version2.x/legacy/python_infer.html">Inference with Python Prediction Engine</a></li>
-<li><a href="../../version2.x/legacy/cpp_infer.html">Inference with C++ Prediction Engine</a></li>
-<li><a href="../../version2.x/legacy/model_list_2.x.html">List of Supported Models</a></li>
+<li><code>image</code>: The path to the input image</li>
+<li><code>result</code>: The model's prediction output</li>
 </ul>
+<p>The visualized result is:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Year<span class="w"> </span><span class="p">|</span><span class="w"> </span>Avg<span class="w"> </span>Revenue<span class="w"> </span>per<span class="w"> </span><span class="m">5</span>-star<span class="w"> </span>Hotel<span class="w"> </span><span class="o">(</span>Million<span class="w"> </span>CNY<span class="o">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Avg<span class="w"> </span>Profit<span class="w"> </span>per<span class="w"> </span><span class="m">5</span>-star<span class="w"> </span>Hotel<span class="w"> </span><span class="o">(</span>Million<span class="w"> </span>CNY<span class="o">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="m">2018</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">104</span>.22<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">9</span>.87
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="m">2019</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">99</span>.11<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">7</span>.47
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="m">2020</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">57</span>.87<span class="w"> </span><span class="p">|</span><span class="w"> </span>-3.87
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="m">2021</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">68</span>.99<span class="w"> </span><span class="p">|</span><span class="w"> </span>-2.9
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="m">2022</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">56</span>.29<span class="w"> </span><span class="p">|</span><span class="w"> </span>-9.48
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="m">2023</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">87</span>.99<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">5</span>.96
+</span></code></pre></div>
+<p>Detailed explanation of related methods and parameters:</p>
+<ul>
+<li>Instantiate a vision-language model with <code>ChartParsing</code>. Parameters:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_name</code></td>
+<td>Model name. If set to <code>None</code>, defaults to <code>PP-Chart2Table</code>.</td>
+<td><code>str | None</code></td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>model_dir</code></td>
+<td>Model storage path.</td>
+<td><code>str | None</code></td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>device</code></td>
+<td>Inference device.<br/>
+<b>Examples:</b> <code>"cpu"</code>, <code>"gpu"</code>, <code>"npu"</code>, <code>"gpu:0"</code><br/>
+Defaults to GPU 0 if available; otherwise falls back to CPU.
+</td>
+<td><code>str | None</code></td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Use the model's <code>predict()</code> method for inference. This returns a list of results. The module also offers a <code>predict_iter()</code> method, which behaves identically in terms of inputs and outputs but returns a generator—ideal for large datasets or memory-sensitive scenarios. Choose based on your needs.</li>
+</ul>
+<p><code>predict()</code> method parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tr>
+<td><code>input</code></td>
+<td>Input data (required). Input formats vary by model.<br/>
+For PP-Chart2Table: <code>{'image': image_path}</code>
+</td>
+<td><code>dict</code></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>batch_size</code></td>
+<td>Batch size. Any positive integer.</td>
+<td><code>int</code></td>
+<td>1</td>
+</tr>
+</table>
+
+<ul>
+<li>Prediction results are returned as <code>Result</code> objects for each sample, with support for printing and saving to JSON:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Explanation</th>
+<th>Default</th>
+</tr>
+</thead>
+<tr>
+<td rowspan = "3"><code>print()</code></td>
+<td rowspan = "3">Print results to terminal</td>
+<td><code>format_json</code></td>
+<td><code>bool</code></td>
+<td>Format output using JSON indentation</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>indent</code></td>
+<td><code>int</code></td>
+<td>Indentation level for pretty-printed JSON. Only works when <code>format_json=True</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>ensure_ascii</code></td>
+<td><code>bool</code></td>
+<td>Whether to escape non-ASCII characters to Unicode. If <code>False</code>, keeps characters as-is.</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td rowspan = "3"><code>save_to_json()</code></td>
+<td rowspan = "3">Save results to JSON file</td>
+<td><code>save_path</code></td>
+<td><code>str</code></td>
+<td>File path to save. If a directory, file will use input name as filename.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>indent</code></td>
+<td><code>int</code></td>
+<td>Same as in `print()`</td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>ensure_ascii</code></td>
+<td><code>bool</code></td>
+<td>Same as in `print()`</td>
+<td><code>False</code></td>
+</tr>
+</table>
+
+<ul>
+<li>You can also access the result via properties:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td><code>json</code></td>
+<td>Returns the result in JSON format</td>
+</tr>
+</table>
+
+<h2 id="4-custom-development">4. Custom Development<a class="headerlink" href="#4-custom-development" title="Permanent link">&para;</a></h2>
+<p>Currently, this module supports inference only and does not yet support fine-tuning. Fine-tuning capabilities are planned for future releases.</p>
+<h2 id="5-faq">5. FAQ<a class="headerlink" href="#5-faq" title="Permanent link">&para;</a></h2>
 
 
 
@@ -3140,7 +3544,7 @@ You're not viewing the latest version.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 15, 2025 08:45:10 UTC">August 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2025 02:56:03 UTC">August 21, 2025</span>
   </span>
 
     
@@ -3150,7 +3554,7 @@ You're not viewing the latest version.
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 15, 2025 08:45:10 UTC">August 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2025 02:56:03 UTC">August 21, 2025</span>
   </span>
 
     
@@ -3161,6 +3565,51 @@ You're not viewing the latest version.
 
 
 
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+
+<script src="https://giscus.app/client.js" data-repo="PaddlePaddle/PaddleOCR"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkyNjIyOTYxMjI=" data-category="Q&A" data-category-id="DIC_kwDOD6JSOs4COrbO"
+    data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+    data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+        // Instruct Giscus to set theme
+        giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate"
+                    ? "transparent_dark"
+                    : "light"
+
+                // Instruct Giscus to change theme
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
 
                 
               </article>
@@ -3187,7 +3636,7 @@ You're not viewing the latest version.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="serving.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sever Deployment">
+          <a href="text_recognition.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Text Recognition Module">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -3197,20 +3646,20 @@ You're not viewing the latest version.
                 Previous
               </span>
               <div class="md-ellipsis">
-                Sever Deployment
+                Text Recognition Module
               </div>
             </div>
           </a>
         
         
           
-          <a href="mcp_server.html" class="md-footer__link md-footer__link--next" aria-label="Next: MCP Server">
+          <a href="../pipeline_usage/pipeline_overview.html" class="md-footer__link md-footer__link--next" aria-label="Next: Pipeline Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                MCP Server
+                Pipeline Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3276,10 +3725,10 @@ You're not viewing the latest version.
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../javascripts/katex.min.js"></script>
       

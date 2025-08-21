@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../version2.x/static/images/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -780,6 +780,10 @@ You're not viewing the latest version.
       
         
       
+        
+      
+        
+      
     
     
     
@@ -875,6 +879,52 @@ You're not viewing the latest version.
   
   <span class="md-ellipsis">
     PP-OCRv5 Multilingual Text Recognition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version3.x/deployment/cpp/OCR.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ Local Deployment for General OCR Pipeline - Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version3.x/deployment/cpp/OCR_windows.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ Local Deployment for General OCR Pipeline - Windows
     
   </span>
   
@@ -1256,12 +1306,12 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/python_and_cpp_infer.html" class="md-nav__link">
+      <a href="../deployment/cpp/cpp_local_deployment.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Python and CPP Inference
+    C++ Local Deployment
     
   </span>
   
@@ -1356,6 +1406,8 @@ You're not viewing the latest version.
   
     
     
+      
+        
       
         
       
@@ -1708,6 +1760,29 @@ You're not viewing the latest version.
   
   <span class="md-ellipsis">
     Text Recognition Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module_usage/chart_parsing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chart Parsing Module
     
   </span>
   
@@ -3322,6 +3397,9 @@ You're not viewing the latest version.
 <p>PP-DocTranslation is a document intelligent translation solution provided by PaddlePaddle. It integrates advanced general layout analysis technology and large language model (LLM) capabilities to offer you efficient document intelligent translation services. This solution can accurately identify and extract various elements within documents, including text blocks, headings, paragraphs, images, tables, and other complex layout structures, and on this basis, achieve high-quality multilingual translation. PP-DocTranslation supports mutual translation among multiple mainstream languages, particularly excelling in handling documents with complex layouts and strong contextual dependencies, striving to deliver precise, natural, fluent, and professional translation results. This pipeline also provides flexible serving options, supporting the use of multiple programming languages on various hardware. Moreover, it offers the capability for secondary development, allowing you to train and fine-tune models on your own datasets based on this pipeline, and the trained models can also be seamlessly integrated.</p>
 <p><b>The PP-DocTranslation pipeline uses the PP-StructureV3 sub-pipeline, and thus has all the functions of the PP-StructureV3 pipeline. For more information on the functions and usage details of the PP-StructureV3 pipeline, you can click on the <a href="PP-StructureV3.html">PP-StructureV3 Pipeline Documentation</a> page.</b></p>
 <p>In this pipeline, you can select the model to use based on the benchmark data below.</p>
+<blockquote>
+<p>The inference time only includes the model inference time and does not include the time for pre- or post-processing.</p>
+</blockquote>
 <details><summary> 👉Model List Details</summary>
 <p><b>Document Image Orientation Classification Module:</b></p>
 <table>
@@ -3988,7 +4066,7 @@ devanagari_PP-OCRv3_mobile_rec_infer.tar">Inference Model</a>/<a href="https://p
 </details>
 
 <h2 id="2-quick-start">2. Quick Start<a class="headerlink" href="#2-quick-start" title="Permanent link">&para;</a></h2>
-<p>Before using the PP-DocTranslation pipeline locally, please ensure that you have completed the installation of the wheel package according to the <a href="../installation.html">Installation Tutorial</a>.</p>
+<p>Before using the PP-DocTranslation pipeline locally, please ensure that you have completed the installation of the wheel package according to the <a href="../installation.html">Installation Tutorial</a>. If you prefer to install dependencies selectively, please refer to the relevant instructions in the installation documentation. The corresponding dependency group for this pipeline is <code>trans</code>.</p>
 <p>Please note: If you encounter issues such as the program becoming unresponsive, unexpected program termination, running out of memory resources, or extremely slow inference during execution, please try adjusting the configuration according to the documentation, such as disabling unnecessary features or using lighter-weight models.</p>
 <p>Before use, you need to prepare the API key for a large language model, which supports the <a href="https://console.bce.baidu.com/qianfan/ais/console/onlineService">Baidu Cloud Qianfan Platform</a> or local large model services that comply with the OpenAI interface standards.</p>
 <h3 id="21-experience-via-command-line">2.1 Experience via Command Line<a class="headerlink" href="#21-experience-via-command-line" title="Permanent link">&para;</a></h3>
@@ -5299,6 +5377,7 @@ For Paddle with CUDA 11.8, the compatible TensorRT version is 8.x (x≥6), recom
 <details><summary>(3) Processing visual prediction results: Each sample's prediction result is a corresponding Result object, supporting operations such as printing, saving as images, and saving as <code>json</code> files:</summary>
 
 <table>
+
 <thead>
 <tr>
 <th>Method</th>
@@ -5399,15 +5478,14 @@ For Paddle with CUDA 11.8, the compatible TensorRT version is 8.x (x≥6), recom
           - `use_doc_orientation_classify`: `(bool)` Controls whether to enable the document image orientation classification sub-module
           - `use_doc_unwarping`: `(bool)` Controls whether to enable the text image unwarping sub-module
         - `angle`: `(int)` Prediction result of the document image orientation classification sub-module, returns actual angle value if enabled
-    - `parsing_res_list`: `(List[Dict])` List of parsing results, each element is a dictionary; list order corresponds to reading order after parsing
-        - `block_bbox`: `(np.ndarray)` Bounding box of layout detection
-        - `block_label`: `(str)` Label of the layout region, e.g. `text`, `table`, etc.
-        - `block_content`: `(str)` Content within the layout region
-        - `seg_start_flag`: `(bool)` Indicates whether this layout region is the start of a paragraph
-        - `seg_end_flag`: `(bool)` Indicates whether this layout region is the end of a paragraph
-        - `sub_label`: `(str)` Sub-label of the layout region, e.g. sub-label of `text` could be `title_text`
-        - `sub_index`: `(int)` Sub-index of the layout region, used for restoring Markdown
-        - `index`: `(int)` Index of the layout region, used to display layout sorting results
+
+    - `parsing_res_list`: `(List[Dict])` A list of parsing results, where each element is a dictionary. The order of the list is the reading order after parsing.
+        - `block_bbox`: `(np.ndarray)` The bounding box of the layout area.
+        - `block_label`: `(str)` The label of the layout area, such as `text`, `table`, etc.
+        - `block_content`: `(str)` The content within the layout area.
+        - `block_id`: `(int)` The index of the layout area, used to display the layout sorting result.
+        - `block_order`: `(int)` The order of the layout area, used to display the reading order of the layout. For non-ordered parts, the default value is `None`.
+
     - `overall_ocr_res`: `(Dict[str, Union[List[str], List[float], numpy.ndarray]])` Global OCR result dictionary
       - `input_path`: `(Union[str, None])` Image path accepted by the image OCR sub-pipeline; if input is `numpy.ndarray`, saved as `None`
       - `page_index`: `None`, here input is `numpy.ndarray`, so value is `None`
@@ -6272,7 +6350,7 @@ for i, res in enumerate(result_translate["translationResults"]):
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 15, 2025 08:45:10 UTC">August 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2025 02:56:03 UTC">August 21, 2025</span>
   </span>
 
     
@@ -6282,7 +6360,7 @@ for i, res in enumerate(result_translate["translationResults"]):
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 15, 2025 08:45:10 UTC">August 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2025 02:56:03 UTC">August 21, 2025</span>
   </span>
 
     
@@ -6453,10 +6531,10 @@ for i, res in enumerate(result_translate["translationResults"]):
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../javascripts/katex.min.js"></script>
       
