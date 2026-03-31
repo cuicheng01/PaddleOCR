@@ -27,6 +27,8 @@ English | [简体中文](./readme/README_cn.md) | [繁體中文](./readme/README
 
 
 
+
+
 **PaddleOCR converts PDF documents and images into structured, LLM-ready data (JSON/Markdown) with industry-leading accuracy. With 70k+ Stars and trusted by top-tier projects like Dify, RAGFlow, and Cherry Studio, PaddleOCR is the bedrock for building intelligent RAG and Agentic applications.**
 
 

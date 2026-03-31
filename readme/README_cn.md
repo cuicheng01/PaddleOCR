@@ -26,6 +26,8 @@
 
 
 
+
+
 **PaddleOCR 以业界领先的精准度，将 PDF 文档和图像转换为结构化、LLM 友好的数据格式（JSON/Markdown）。凭借 70,000+ Stars 的成绩，PaddleOCR 已获得 Dify、RAGFlow、Cherry Studio 等顶级项目的广泛信赖，是构建智能 RAG 和 Agentic 应用的核心基础组件。**
 
 

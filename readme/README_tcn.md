@@ -25,6 +25,8 @@
 </div>
 
 
+
+
 **PaddleOCR 以業界領先的精準度，將 PDF 文件和圖像轉換為結構化、LLM 友好的資料格式（JSON/Markdown）。憑藉 70,000+ Stars 的成績，PaddleOCR 已獲得 Dify、RAGFlow、Cherry Studio 等頂級專案的廣泛信賴，是建構智慧 RAG 和 Agentic 應用的核心基礎元件。**
 
 

@@ -27,6 +27,8 @@
 
 
 
+
+
 **PaddleOCR는 문서와 이미지를 업계 최고 수준의 정확도로 구조화된 LLM 지원 데이터(JSON/Markdown)로 변환합니다. 70,000개 이상의 Star와 Dify, RAGFlow, Cherry Studio 등 최상위 프로젝트의 신뢰를 받는 PaddleOCR는 지능형 RAG 및 에이전트 기반 애플리케이션 구축의 핵심 기반입니다.**
 
 

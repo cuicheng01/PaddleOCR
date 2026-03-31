@@ -26,6 +26,8 @@
 
 
 
+
+
 **PaddleOCR convierte documentos e imágenes en datos estructurados y listos para LLM (JSON/Markdown) con una precisión líder en la industria. Con más de 70 000 estrellas y la confianza de proyectos de primer nivel como Dify, RAGFlow y Cherry Studio, PaddleOCR es la base para construir aplicaciones inteligentes de RAG y Agentic.**
 
 
